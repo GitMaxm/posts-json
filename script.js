@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const postsContainer = document.getElementById('posts');
 
-    fetch('https://gitmaxm.github.io/posts-json/')
+    fetch('https://gitmaxm.github.io/posts-json/posts.json')
         .then(response => response.json())
         .then(data => {
             data.forEach(post => {
